@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./NavBar.scss";
 import { NavLink } from "react-router-dom";
 import menuIcon from "../../assets/icons/menu-icon.svg";
+import logo from '../../assets/logos/Logo.png'
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,8 @@ function NavBar() {
         className="nav__menu-icon"
         onClick={toggleMenu}
       />
-      <h2 className="nav__logo">Devin Runowski</h2>
+      <img src={logo} alt="Devin Runowski Logo" className="nav__logo" />
+      {/* <h2 className="nav__logo">Devin Runowski</h2> */}
         <ul className="nav__list-desktop">
           <article className="nav__layout">
             <li>
