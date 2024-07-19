@@ -1,0 +1,108 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.active-desktop {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.active {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.inactive {
+  text-decoration: none;
+  color: black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .nav__list-mobile {
+    animation: menu-open 0.25s linear;
+  }
+}
+.nav {
+  display: flex;
+  position: relative;
+  height: 10vh;
+  align-items: center;
+  padding-left: $padding-mobile-sides;
+  padding-right: $padding-mobile-sides;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  &__list-mobile {
+    list-style: none;
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1rem;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    @include tablet {
+      font-size: 3rem;
+      gap: 1rem;
+      padding: 2rem;
+      padding-left: 2.5rem;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__list-desktop {
+    display: none;
+    @include desktop {
+      list-style: none;
+      padding-left: $padding-desktop-sides;
+      padding-right: $padding-desktop-sides;
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+  &__layout {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+  }
+  &__logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 2.5rem;
+    }
+    @include desktop {
+      left: 49%;
+    }
+  }
+  &__menu-icon {
+    height: 7vh;
+    @include desktop {
+      display: none;
+    }
+  }
+}
+@keyframes menu-open {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
