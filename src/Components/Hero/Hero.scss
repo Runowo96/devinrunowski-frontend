@@ -1,0 +1,43 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.hero{
+    color: white;
+    background-color: black;
+    padding: $padding-mobile-sides;
+    margin: $padding-mobile-sides;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    @include tablet{
+        padding: $padding-tablet-sides;
+        margin: $padding-tablet-sides;
+        font-size: 1.75rem;
+        gap: 1.5rem;
+    }
+    @include desktop{
+        padding: calc($padding-desktop-sides/2);
+        margin: $padding-desktop-sides;
+        font-size: 2.5rem;
+        gap: 2rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__image{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__section{
+ 
+        @include desktop{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+        }
+    }
+}
