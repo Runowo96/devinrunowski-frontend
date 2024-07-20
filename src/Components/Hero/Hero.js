@@ -7,7 +7,7 @@ function Hero() {
     <div className="hero">
       <section className="hero__section">
         <h1 className="hero__title">Devin Runowski</h1>
-        <h2>Full Stack Developer</h2>
+        <h2>Software Engineer</h2>
       </section>
 
       <img className="hero__image" src={devinImage} alt="Devin Runowski" />
