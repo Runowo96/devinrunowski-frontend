@@ -21,6 +21,8 @@
     @include desktop{
         padding: calc($padding-desktop-sides/2);
         margin: $padding-desktop-sides;
+        margin-top: calc($padding-desktop-sides/2);
+        margin-bottom: calc($padding-desktop-sides/2);
         font-size: 2.5rem;
         gap: 2rem;
         flex-direction: row;
