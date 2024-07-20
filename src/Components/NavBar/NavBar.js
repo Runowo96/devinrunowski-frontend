@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./NavBar.scss";
 import { NavLink } from "react-router-dom";
 import menuIcon from "../../assets/icons/menu-icon.svg";
+import logo from "../../assets/logos/Logo.png";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,49 +18,60 @@ function NavBar() {
         className="nav__menu-icon"
         onClick={toggleMenu}
       />
-      <h2 className="nav__logo">Devin Runowski</h2>
-        <ul className="nav__list-desktop">
-          <article className="nav__layout">
-            <li>
-              <NavLink
-                onClick={toggleMenu}
-                className={({ isActive }) => (isActive ? "active-desktop" : "inactive")}
-                to="/"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                onClick={toggleMenu}
-                className={({ isActive }) => (isActive ? "active-desktop" : "inactive")}
-                to="/about/me"
-              >
-                About Me
-              </NavLink>
-            </li>
-          </article>
-          <artcile className="nav__layout">
-            <li>
-              <NavLink
-                onClick={toggleMenu}
-                className={({ isActive }) => (isActive ? "active-desktop" : "inactive")}
-                to="/projects"
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                onClick={toggleMenu}
-                className={({ isActive }) => (isActive ? "active-desktop" : "inactive")}
-                to="/contact"
-              >
-                Contact
-              </NavLink>
-            </li>
-          </artcile>
-        </ul>
+      <NavLink to="/">
+        <img src={logo} alt="Devin Runowski Logo" className="nav__logo" />
+      </NavLink>
+      {/* <h2 className="nav__logo">Devin Runowski</h2> */}
+      <ul className="nav__list-desktop">
+        <article className="nav__layout">
+          <li>
+            <NavLink
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive ? "active-desktop" : "inactive"
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive ? "active-desktop" : "inactive"
+              }
+              to="/about/me"
+            >
+              About Me
+            </NavLink>
+          </li>
+        </article>
+        <artcile className="nav__layout">
+          <li>
+            <NavLink
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive ? "active-desktop" : "inactive"
+              }
+              to="/projects"
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive ? "active-desktop" : "inactive"
+              }
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+          </li>
+        </artcile>
+      </ul>
 
       {isOpen && (
         <ul className="nav__list-mobile">

@@ -76,17 +76,18 @@
     gap: 5vw;
   }
   &__logo {
-    font-weight: 600;
-    font-size: 1.5rem;
+    // font-weight: 600;
+    // font-size: 1.5rem;
     position: absolute;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    text-transform: uppercase;
-    @include tablet {
-      font-size: 2.5rem;
-    }
+    // text-align: center;
+    // text-transform: uppercase;
+    height: 100%;
+    // @include tablet {
+    //   font-size: 2.5rem;
+    // }
     @include desktop {
       left: 49%;
     }
