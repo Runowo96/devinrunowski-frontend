@@ -1,0 +1,62 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.feat-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $padding-mobile-sides;
+  gap: $padding-mobile-sides;
+  &__sub-cont {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: $padding-mobile-sides;
+    gap: $padding-mobile-sides;
+  }
+  &__image {
+    width: 100%;
+    // border: 1px solid black;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow:12px 12px 12px rgba(0,0,0,0.1)inset, -10px -10px 10px white inset;
+  }
+  &__name {
+    font-size: 1.5rem;
+
+  }
+  &__name-link{
+    text-decoration: none;
+    color: black;
+  }
+  &__description {
+  }
+  &__tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    line-height: 0.75rem;
+  }
+  &__tech-stack-text {
+  }
+  &__url {
+    color: black;
+    font-weight: bold;
+  }
+  &__btn{
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    &:hover{
+      background-color: black;
+      color: white;
+    }
+  }
+}
