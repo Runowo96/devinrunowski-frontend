@@ -9,42 +9,56 @@ function FeatProjects() {
     featData.push(projectData[i]);
   }
   return (
-    <section className="feat-project">
-      <h2>Featured Projects</h2>
-      {featData.map((data) => {
-        function index() {
-          let increment = 0;
-          increment++;
-          return increment;
-        }
-        return (
-          <article key={index} className="feat-project__sub-cont">
-            <img
-              src={data.image}
-              alt={data.name}
-              className="feat-project__image"
-            />
-            <a className="feat-project__name-link" href={data.url}>
-              <h3 className="feat-project__name">{data.name} </h3>
-            </a>
-            <p className="feat-project__description">{data.description}</p>
-            <ul className="feat-project__tech-stack">
-              {data["tech-stack"].map((tech) => {
-                return (
-                  <li className="feat-project__tech-stack-text">{tech}</li>
-                );
-              })}
-            </ul>
+    <>
+      <h2 className="feat-project__header">Featured Projects</h2>
+
+      <section className="feat-project">
+        {featData.map((data) => {
+          function index() {
+            let increment = 0;
+            increment++;
+            return increment;
+          }
+          return (
             <a href={data.url} className="feat-project__url">
-              {data.url}
+              <article key={index} className="feat-project__sub-cont">
+                <article className="feat-project__img-name-cont">
+                  <img
+                    src={data.image}
+                    alt={data.name}
+                    className="feat-project__image"
+                  />
+                  <h3 className="feat-project__name">{data.name} </h3>
+                </article>
+                <article className="feat-project__des-cont">
+                  <h3 className="feat-project__name feat-project__name--desktop">
+                    {data.name}
+                  </h3>
+                  <p className="feat-project__description">
+                    {data.description}
+                  </p>
+                  <h4 className="feat-project__tech-stack-text">
+                    <strong>Tech Stack:</strong>
+                  </h4>
+                  <ul className="feat-project__tech-stack">
+                    {data["tech-stack"].map((tech) => {
+                      return (
+                        <li className="feat-project__tech-stack-text">
+                          {tech}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </article>
+              </article>
             </a>
-          </article>
-        );
-      })}
-      <NavLink to="/projects">
+          );
+        })}
+      </section>
+      <NavLink className="feat-project__btn-cont" to="/projects">
         <button className="feat-project__btn">View All Projects</button>
       </NavLink>
-    </section>
+    </>
   );
 }
 
