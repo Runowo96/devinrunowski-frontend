@@ -1,7 +1,7 @@
 import React from "react";
 import "./FeatProjects.scss";
 import projectData from "../../data/projects-data.json";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 function FeatProjects() {
   const featData = [];
