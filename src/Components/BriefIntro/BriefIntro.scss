@@ -35,9 +35,14 @@
         text-align: center;
         @include tablet {
             font-size: 2rem;
+            width: 80vw;
+            min-width: 500px;
+            margin: auto;
         }
         @include desktop {
             font-size: 1.5rem;
+            width: 60vw;
+            min-width: 500px;
         }
     }
     &__sub-section-a{

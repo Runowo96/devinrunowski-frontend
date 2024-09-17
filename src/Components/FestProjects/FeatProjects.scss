@@ -2,6 +2,24 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
 
+@keyframes inflate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+// @keyframes deflate {
+//   100% {
+//     transform: scale(1.2);
+//   }
+//   0% {
+//     transform: scale(1);
+//   }
+// }
+
 .feat-project {
   display: flex;
   flex-direction: column;
@@ -143,7 +161,12 @@
       background-color: black;
       color: white;
       cursor: pointer;
+      animation: inflate 0.3s ease-in-out forwards ;
+      
     }
+    // &:not(:hover){
+    //   animation: deflate 0.3s ease-in-out backwards ;
+    // }
   }
   &__btn-cont {
     display: flex;
@@ -158,3 +181,6 @@
     }
   }
 }
+
+
+

@@ -10,10 +10,11 @@ function FeatProjects() {
   }
   return (
     <>
-      <h2 className="feat-project__header">Featured Projects</h2>
+      <h2 className="feat-project__header">Projects</h2>
+      {/* <h2 className="feat-project__header">Featured Projects</h2> */}
 
       <section className="feat-project">
-        {featData.map((data) => {
+        {/*featData*/projectData.map((data) => {
           function index() {
             let increment = 0;
             increment++;
@@ -55,9 +56,9 @@ function FeatProjects() {
           );
         })}
       </section>
-      <NavLink className="feat-project__btn-cont" to="/projects">
+      {/* <NavLink className="feat-project__btn-cont" to="/projects">
         <button className="feat-project__btn">View All Projects</button>
-      </NavLink>
+      </NavLink> */}
     </>
   );
 }

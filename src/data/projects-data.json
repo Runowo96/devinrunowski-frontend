@@ -14,21 +14,7 @@
         ],
         "url": "https://rabbitholebrowser.com"
     },
-    {
-        "name": "Filopino Community Signup form",
-        "description": "This project is a signup form for the Filipino community to assist in gathering user data for fintech app in development, this form is being launched at this years festival with over half a million attendees.",
-        "image": "/images/filipino-community.png",
-        "tech-stack": [
-            "HTML",
-            "SCSS",
-            "JavaScipt",
-            "React",
-            "Node",
-            "Express",
-            "MongoDB"
-        ],
-        "url": "https://taste-of-manila.netlify.app/"
-    },
+
     {
         "name": "Blue Kee Design Co.",
         "description": "This project is for a local digital designer who is looking to showcase their work and attract new clients. The site is a simple one page design that showcases the designers work and provides a contact form for potential clients.",
