@@ -1,0 +1,15 @@
+    {
+        "name": "Filopino Community Signup form",
+        "description": "This project is a signup form for the Filipino community to assist in gathering user data for fintech app in development, this form is being launched at this years festival with over half a million attendees.",
+        "image": "/images/filipino-community.png",
+        "tech-stack": [
+            "HTML",
+            "SCSS",
+            "JavaScipt",
+            "React",
+            "Node",
+            "Express",
+            "MongoDB"
+        ],
+        "url": "https://taste-of-manila.netlify.app/"
+    }
