@@ -50,6 +50,12 @@ margin-bottom: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    @include tablet{
+      justify-content: center;
+      gap: 2rem;
+      padding-bottom: 2rem;
+
+    }
   }
   &__sub-sect {
     display: flex;
@@ -63,8 +69,13 @@ margin-bottom: 1.5rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     @include tablet {
       font-size: 2rem;
-      padding:  1rem;
-      margin: 1rem;
+      padding:  1.5rem;
+      margin: 0rem;
+      width: 20vw;
+      height: 35vw;
+      display: flex;
+justify-content: space-between;  
+
     }
 
 
@@ -72,5 +83,9 @@ margin-bottom: 1.5rem;
   &__img {
     height: 75%;
     margin: 1rem;
+  
+  @include tablet{
+    height: 65%;
   }
+}
 }
