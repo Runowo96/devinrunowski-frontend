@@ -7,7 +7,7 @@ function Skills() {
     const backData = skillData[1].backend;
     const devToolsData = skillData[2].devtools;
   return (
-    <>
+    <section className='skills'>
       <h2 className='skills__header'>Skills</h2>
       <section className='skills__sub-container'>
       <h3 className='skills__sub-header'>Front-End</h3>
@@ -70,7 +70,7 @@ function Skills() {
 
       </section>
 
-    </>
+    </section>
   )
 }
 
