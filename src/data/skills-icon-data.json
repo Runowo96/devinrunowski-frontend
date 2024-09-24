@@ -44,10 +44,6 @@
             {
                 "name": "MongoDB",
                 "img": "/icons/mongodb.svg"
-            },
-            {
-                "name": "Jest",
-                "img": "/icons/jest.svg"
             }
         ]
     },
@@ -64,6 +60,10 @@
             {
                 "name": "Webpack",
                 "img": "/icons/webpack.svg"
+            },
+            {
+                "name": "Jest",
+                "img": "/icons/jest.svg"
             }
         ]
     }
