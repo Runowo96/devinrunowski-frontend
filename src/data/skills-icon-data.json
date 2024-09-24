@@ -1,0 +1,70 @@
+[
+    {
+        "frontend": [
+            {
+                "name": "JavaScript",
+                "img": "/icons/javascript.svg"
+            },
+            {
+                "name": "HTML",
+                "img": "/icons/html.svg"
+            },
+            {
+                "name": "CSS",
+                "img": "/icons/css.svg"
+            },
+            {
+                "name": "SCSS",
+                "img": "/icons/scss.svg"
+            },
+            {
+                "name": "TypeScript",
+                "img": "/icons/typescript.svg"
+            },
+            {
+                "name": "Flutter",
+                "img": "/icons/flutter.svg"
+            },
+            {
+                "name": "React.js",
+                "img": "/icons/react.svg"
+            }
+        ]
+    },
+    {
+        "backend": [
+            {
+                "name": "Node.js",
+                "img": "/icons/node.svg"
+            },
+            {
+                "name": "MySQL",
+                "img": "/icons/mysql.svg"
+            },
+            {
+                "name": "MongoDB",
+                "img": "/icons/mongodb.svg"
+            }
+        ]
+    },
+    {
+        "devtools": [
+            {
+                "name": "Github",
+                "img": "/icons/github.svg"
+            },
+            {
+                "name": "Heroku",
+                "img": "/icons/heroku.svg"
+            },
+            {
+                "name": "Webpack",
+                "img": "/icons/webpack.svg"
+            },
+            {
+                "name": "Jest",
+                "img": "/icons/jest.svg"
+            }
+        ]
+    }
+]
