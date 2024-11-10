@@ -14,18 +14,20 @@
         ],
         "url": "https://rabbitholebrowser.com"
     },
-
     {
         "name": "Blue Kee Design Co.",
-        "description": "This project is for a local digital designer who is looking to showcase their work and attract new clients. The site is a simple one page design that showcases the designers work and provides a contact form for potential clients.",
-        "image": "/images/blue-kee.png",
+        "description": "The Blue Kee Design Co. website is a responsive React application built to showcase custom laser-cut products for weddings and events. It features a visually appealing design, interactive navigation, smooth scroll animations, and a detailed contact form with client inquiry validation. The site highlights product packages, integrates dynamic content rendering, and ensures a seamless experience across desktop, tablet, and mobile devices.",
+        "image": "/images/blue-kee-design.png",
         "tech-stack": [
             "React",
-            "Node",
-            "Express",
-            "MySQL"
+            "SCSS",
+            "CSS keyframes",
+            "React hooks",
+            "React state managment",
+            "EmailJS for contact form",
+            "Netlify for deployment"
         ],
-        "url": "https://bluekee.netlify.app/"
+        "url": "https://bluekeedesign.netlify.app/"
     },
     {
         "name": "Devin Runowski",
