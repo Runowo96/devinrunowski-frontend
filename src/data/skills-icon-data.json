@@ -42,6 +42,10 @@
                 "img": "/icons/mysql.svg"
             },
             {
+                "name": "PostgreSQL",
+                "img": "/icons/postgre.svg"
+            },
+            {
                 "name": "MongoDB",
                 "img": "/icons/mongodb.svg"
             }
