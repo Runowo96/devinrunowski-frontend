@@ -1,20 +1,5 @@
 [
     {
-        "name": "RABBIT HOLE",
-        "description": "Anyone who is a constant web search knows what its like to go down a rabbit hole and finding yourself not being able to find your way back. This project is a web app with a simplistic design that allows users to save their search results and come back to them later.",
-        "image": "/images/rabbit-hole.png",
-        "tech-stack": [
-            "HTML",
-            "SCSS",
-            "JavaScipt",
-            "React",
-            "Node",
-            "Express",
-            "MySQL"
-        ],
-        "url": "https://rabbitholebrowser.com"
-    },
-    {
         "name": "Blue Kee Design Co.",
         "description": "The Blue Kee Design Co. website is a responsive React application built to showcase custom laser-cut products for weddings and events. It features a visually appealing design, interactive navigation, smooth scroll animations, and a detailed contact form with client inquiry validation. The site highlights product packages, integrates dynamic content rendering, and ensures a seamless experience across desktop, tablet, and mobile devices.",
         "image": "/images/blue-kee-design.png",
@@ -28,6 +13,21 @@
             "Netlify for deployment"
         ],
         "url": "https://bluekeedesign.netlify.app/"
+    },
+    {
+        "name": "RABBIT HOLE",
+        "description": "Anyone who is a constant web search knows what its like to go down a rabbit hole and finding yourself not being able to find your way back. This project is a web app with a simplistic design that allows users to save their search results and come back to them later.",
+        "image": "/images/rabbit-hole.png",
+        "tech-stack": [
+            "HTML",
+            "SCSS",
+            "JavaScipt",
+            "React",
+            "Node",
+            "Express",
+            "MySQL"
+        ],
+        "url": "https://rabbitholebrowser.com"
     },
     {
         "name": "Devin Runowski",

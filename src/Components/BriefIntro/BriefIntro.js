@@ -7,14 +7,11 @@ function BriefIntro() {
       <h2 className="intro__header">Welcome to My Portfolio!</h2>
       <section className="intro__sub-section-a">
         <p className="intro__sub-text">
-          Hi, I'm Devin Runowski, a software engineer with a passion for
-          building and learning. My journey from summer projects on the family
-          farm to software development has been fueled by a love for
-          problem-solving and creating user-friendly applications. With
-          expertise in HTML, CSS, JavaScript, React, and APIs, I'm currently
-          diving into Flutter and Python to explore mobile app development and
-          AI. Check out my projects and feel free to reach out – I’m always
-          excited to connect and collaborate!
+        I'm Devin, a full-stack software engineer with a passion for building robust, scalable applications from end to end. With expertise in both front-end frameworks like React and Flutter, and back-end technologies like Node.js and PostgreSQL, I create seamless, dynamic user experiences while ensuring the server-side logic is efficient and reliable.
+
+I thrive in environments where I can take ownership of the entire development lifecycle-designing responsive interfaces, integrating complex APIs, and optimizing databases for performance. My projects range from mobile apps and interactive websites to backend services and custom API solutions, always with a focus on clean, maintainable code.
+
+When I'm not deep in code, I'm exploring creative projects like laser cutting and 3D printing, finding new ways to blend technology and art.
         </p>
         {/* <hr class="solid intro__divider"/> */}
         {/* <section className="intro__sub-section-ab">

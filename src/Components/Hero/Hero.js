@@ -8,6 +8,7 @@ function Hero() {
       <article className="hero__section">
         <h1 className="hero__title">Devin Runowski</h1>
         <h2>Software Engineer</h2>
+        <h2>Creative Technologist</h2>
         <article className="hero__traits">
           <p>ATTENTION TO DETAIL</p>
           <hr class="solid" />
